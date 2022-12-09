@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "jagw"
+version = "v1.3.2"
+description = "Python client library for the Jalapeno API Gateway"
+authors = ["Julian Klaiber <julian@klaiber.me>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://jalapeno-api-gateway/github.io/jagw"
+documentation = "https://jalapeno-api-gateway/github.io/jagw"
+repository = "https://github.com/jalapeno-api-gateway/jagw-python"
+packages = [
+    { include = "jagw" },
+    { include = "core" },
+    { include = "requestservice" },
+    { include = "subscriptionservice" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+grpcio = "^1.51.1"
+grpcio-tools = "^1.51.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
